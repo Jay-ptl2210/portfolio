@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="#profile" style="text-decoration: none; color: inherit;">Jay Patel</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Mobile Navigation (Hamburger) -->
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="#profile" style="text-decoration: none; color: inherit;">Jay Patel</a>
+      </div>
+      <div id="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </div>
+    </nav> 
+    
+    <!-- Profile Section - Restructured -->
+    <main>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="Jay Patel profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Jay Patel</h1>
+          <p class="section__text__p2 typewriter">
+            <span class="typing-text"></span>
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example')">
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              I am currently pursuing <b> B.Tech in Information Technology</b>, passionate about web development
+              and emerging technologies. With expertise in MERN Stack development and
+              strong foundation in OOP using Java and Python, I am also enthusiastic
+              about AI/ML technologies.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Experience</h3>
+              <p>Actively seeking internship opportunities<br />MERN Stack Development</p>
+            </div>
+            <div class="details-container">
+              <h3>Education</h3>
+              <p>B.Tech Information Technology<br />
+                Chhotubhai Gopalbhai Patel Institute of Technology<br />
+                Uka Tarsadia University<br />
+                Currently in 6th Semester | CGPA: 9.27</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <!-- In the experience section, update the articles to remove icons -->
+            <div class="article-container">
+              <article>
+                <h3>MongoDB</h3>
+              </article>
+              <article>
+                <h3>Express.js</h3>
+              </article>
+              <article>
+                <h3>React.js</h3>
+              </article>
+              <article>
+                <h3>Node.js</h3>
+              </article>
+              <article>
+                <h3>HTML</h3>
+              </article>
+              <article>
+                <h3>CSS</h3>
+              </article>
+              <article>
+                <h3>JavaScript</h3>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming & Technologies</h2>
+            <div class="article-container">
+              <article>
+                <h3>Java</h3>
+              </article>
+              <article>
+                <h3>Python</h3>
+              </article>
+              <article>
+                <h3>OOP</h3>
+              </article>
+              <article>
+                <h3>Machine Learning</h3>
+              </article>
+              <article>
+                <h3>AI</h3>
+              </article>
+              <article>
+                <h3>VS Code</h3>
+              </article>
+              <article>
+                <h3>Git</h3>
+              </article>
+              <article>
+                <h3>GitHub</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <!-- <p class="section__text__p1">Browse My Recent</p> -->
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CalcExperts</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Jay-ptl2210/CalcExperts.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://thriving-mousse-ebf79e.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jaydptl.22@gmail.com">jaydptl.22@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+917041151519">+91 7041151519</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
