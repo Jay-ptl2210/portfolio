@@ -6,15 +6,30 @@ window.onload = function() {
 
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
+  const icon = document.querySelector("#hamburger-menu");
   menu.classList.toggle("open");
   icon.classList.toggle("open");
-  function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector("#hamburger-menu");
-    menu.classList.toggle("open");
-  }
 }
+
+// Add this new code to close menu when links are clicked
+document.addEventListener("DOMContentLoaded", function() {
+  // Get all links in the hamburger menu
+  const menuLinks = document.querySelectorAll(".menu-links a");
+  
+  // Add click event listener to each link
+  menuLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      const menu = document.querySelector(".menu-links");
+      const icon = document.querySelector("#hamburger-menu");
+      
+      // Only close if menu is open
+      if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+        icon.classList.remove("open");
+      }
+    });
+  });
+});
 
 const texts = [
   "MERN Stack/Web Dev",
