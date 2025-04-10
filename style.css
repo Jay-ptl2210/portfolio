@@ -433,6 +433,17 @@ article:hover {
 }
 
 .skill-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  transition: transform 0.3s ease;
+}
+
+article:hover .skill-icon {
+  transform: scale(1.2);
+}
+
+.skill-icon {
   width: 40px;
   height: 40px;
   margin-bottom: 0.5rem;
