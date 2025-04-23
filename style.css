@@ -674,3 +674,90 @@ footer p {
 @keyframes blink {
   50% { border-color: transparent; }
 }
+/* Certificate box styles */
+.certificate-box {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.certificate-box .article-container {
+  margin-bottom: 0.5rem;
+}
+
+.certificate-box .certificate-img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.certificate-box h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.certificate-box p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-box .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.certificate-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.certificate-img:hover {
+  transform: scale(1.05);
+}
+
+/* Update navigation to include certificates */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.certificate-details {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin: 0.5rem 0;
+}
+
+.certificate-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.certificate-skills span {
+  background: rgba(100, 255, 218, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid var(--secondary-color);
+}
+
+.project-skill{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+.project-skill span {
+  background: rgba(100, 255, 218, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid var(--secondary-color);
+}
