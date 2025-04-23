@@ -761,3 +761,14 @@ footer p {
   font-size: 0.8rem;
   border: 1px solid var(--secondary-color);
 }
+
+.project-skill span:hover {
+  background: var(--secondary-color);  
+  color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+.certificate-skills span:hover {
+  background: var(--secondary-color);  
+  color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
