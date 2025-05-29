@@ -1,0 +1,317 @@
+.about {
+  padding: 3rem 0;
+  min-height: calc(100vh - 6rem); /* Subtract navbar and footer height */
+  background-color: var(--background-dark);
+}
+
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto 0;
+}
+
+.about-section {
+  background-color: var(--surface-dark);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-icon {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.section-header h3 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.section-content {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.objective-section .section-content p {
+  margin: 0;
+  text-align: justify;
+}
+
+.education-section .section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-item {
+  padding: 1.5rem;
+  background-color: var(--background-dark);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateX(10px);
+}
+
+.education-item h4 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.education-item .institute {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.education-details p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.period {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.grade {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.skills {
+  margin-top: 3rem;
+}
+
+.skills h3 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-tag {
+  background-color: var(--surface-dark);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+}
+
+.experience {
+  background-color: var(--surface-dark);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.experience h3 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.experience-item {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.experience-item h4 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.experience-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.experience-item li {
+  color: var(--text-secondary);
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.experience-item li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+.objective {
+  margin-bottom: 3rem;
+}
+
+.objective h3 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.objective p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.skill-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skill-category {
+  background-color: var(--surface-dark);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 2rem 0;
+    min-height: calc(100vh - 4rem);
+  }
+
+  .about-grid {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .about-section {
+    padding: 1.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .section-icon {
+    font-size: 1.5rem;
+  }
+
+  .section-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-content {
+    font-size: 1rem;
+  }
+
+  .education-item {
+    padding: 1.2rem;
+  }
+
+  .education-item h4 {
+    font-size: 1.2rem;
+  }
+
+  .education-item .institute {
+    font-size: 1rem;
+  }
+
+  .education-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .education-details p {
+    font-size: 0.9rem;
+  }
+
+  .skills h3 {
+    font-size: 1.5rem;
+  }
+
+  .experience h3 {
+    font-size: 1.5rem;
+  }
+
+  .experience-item h4 {
+    font-size: 1.2rem;
+  }
+
+  .experience-item li {
+    font-size: 0.95rem;
+  }
+
+  .objective h3 {
+    font-size: 1.5rem;
+  }
+
+  .objective p {
+    font-size: 1rem;
+  }
+
+  .skill-category {
+    padding: 1.2rem;
+  }
+
+  .skill-category h4 {
+    font-size: 1.1rem;
+  }
+} 
