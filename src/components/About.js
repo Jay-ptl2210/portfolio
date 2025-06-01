@@ -1,29 +1,18 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { FaGraduationCap, FaUserAlt } from 'react-icons/fa';
+import { FaGraduationCap, FaUser } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
   return (
     <section className="about">
       <div className="container">
-        <motion.div
-          className="about-content"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <div className="about-content">
           <h2 className="section-title">About Me</h2>
           
           <div className="about-grid">
-            <motion.div 
-              className="about-section objective-section"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
+            <div className="about-section objective-section">
               <div className="section-header">
-                <FaUserAlt className="section-icon" />
+                <FaUser className="section-icon" />
                 <h3>Objective</h3>
               </div>
               <div className="section-content">
@@ -35,16 +24,11 @@ const About = () => {
                   Seeking an opportunity to grow in a dynamic and innovative environment.
                 </p>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div 
-              className="about-section education-section"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
+            <div className="about-section education-section">
               <div className="section-header">
-                <FaGraduationCap className="section-icon" />
+                <FaGraduationCap className="section-icon"/>
                 <h3>Education</h3>
               </div>
               <div className="section-content">
@@ -56,8 +40,7 @@ const About = () => {
                     <p className="period">2022 - Present</p>
                     <p className="grade">CGPA: 9.27 (till 5th semester)</p>
                   </div>
-                </div>
-
+                </div> 
                 <div className="education-item">
                   <h4>12th with PCM (GSHEB)</h4>
                   <p className="institute">Sanskar Vidhyalay, Kim, Surat</p>
@@ -76,9 +59,9 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

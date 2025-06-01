@@ -108,7 +108,7 @@
 }
 
 .skills {
-  margin-top: 3rem;
+  margin-top: 0;
 }
 
 .skills h3 {
@@ -188,6 +188,43 @@
   left: 0;
 }
 
+.experience-item .internship-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.experience-item .company-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-item .company-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.experience-item .duration-location {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.experience-item .role-title {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item .company-name {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
 .objective {
   margin-bottom: 3rem;
 }
@@ -226,6 +263,181 @@
   color: var(--primary-color);
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+
+.experience-header {
+  margin-bottom: 1.5rem;
+}
+
+.experience-header h4 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-details {
+  margin-bottom: 0.5rem;
+}
+
+.company-details .company-name {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.company-details .location {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.duration {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.duration .type {
+  color: var(--primary-color);
+}
+
+.responsibilities {
+  margin-bottom: 1.5rem;
+}
+
+.responsibilities ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.responsibilities li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.responsibilities li::before {
+  content: "▹";
+  position: absolute;
+  left: -1.5rem;
+  color: var(--primary-color);
+}
+
+.tech-stack {
+  background: rgba(var(--primary-color-rgb), 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.tech-stack p {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.tech-stack strong {
+  color: var(--primary-color);
+}
+
+.experience-card {
+  padding: 1.5rem;
+  background-color: var(--background-dark);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateX(10px);
+}
+
+.experience-card h4 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.experience-card .company {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem 0;
+  font-weight: 600;
+}
+
+.experience-card .company-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  font-style: italic;
+}
+
+.experience-card .location {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.experience-card .experience-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-card .period {
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+.experience-card .duration {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin: 0;
+}
+
+.experience-card .responsibilities {
+  margin-bottom: 1.5rem;
+}
+
+.experience-card .responsibilities ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.experience-card .responsibilities li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.experience-card .responsibilities li::before {
+  content: "▹";
+  position: absolute;
+  left: -1.5rem;
+  color: var(--primary-color);
+}
+
+.experience-card .tech-stack {
+  background: rgba(var(--primary-color-rgb), 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.experience-card .tech-stack p {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.experience-card .tech-stack strong {
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -314,4 +526,45 @@
   .skill-category h4 {
     font-size: 1.1rem;
   }
-} 
+
+  .experience-card {
+    padding: 1.2rem;
+  }
+
+  .experience-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .experience-card .company,
+  .experience-card .company-subtitle {
+    font-size: 1rem;
+  }
+
+  .experience-card .location {
+    font-size: 0.9rem;
+  }
+
+  .experience-card .experience-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-card .period,
+  .experience-card .duration {
+    font-size: 0.9rem;
+  }
+
+  .experience-card .responsibilities li {
+    font-size: 0.95rem;
+  }
+
+  .experience-card .tech-stack {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .experience-card .tech-stack p {
+    font-size: 0.9rem;
+  }
+}

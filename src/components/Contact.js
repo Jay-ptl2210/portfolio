@@ -66,7 +66,7 @@ const Contact = () => {
                 <FaLinkedin className="info-icon" />
                 <div>
                   <h3>LinkedIn</h3>
-                  <a href="https://www.linkedin.com/in/jayptl-it-221004" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/jay-patel-it-221004-" target="_blank" rel="noopener noreferrer">
                     jayptl-it-221004
                   </a>
                 </div>
