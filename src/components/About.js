@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGraduationCap, FaUser } from 'react-icons/fa';
+import { FaGraduationCap, FaUser, FaBriefcase, FaNodeJs, FaUniversity } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -26,6 +26,48 @@ const About = () => {
               </div>
             </div>
 
+            <div className="about-section experience-section">
+              <div className="section-header">
+                <FaBriefcase className="section-icon"/>
+                <h3>Experience</h3>
+              </div>
+              <div className="section-content">
+                <div className="experience-item">
+                  <div className="role-header">
+                    <div className="role-title">
+                      <span className="role-icon"><FaNodeJs /></span>
+                      <h4>Node.js Development Intern</h4>
+                    </div>
+                    <span className="duration">June 2025 - Present</span>
+                  </div>
+                  <div className="company-info">
+                    <p className="company-name">
+                      <a href="https://webitoinfotech.com/" target="_blank" rel="noopener noreferrer" className="company-link">
+                        Webito Infotech
+                      </a>
+                    </p>
+                    <p className="location">Surat, India (Onsite)</p>
+                  </div>
+                  <div className="experience-details">
+                    <ul>
+                      <li>
+                        <span className="highlight">Backend:</span> Built scalable server-side logic using Node.js and Express.js
+                      </li>
+                      <li>
+                        <span className="highlight">Projects:</span> Worked on real-time applications with MongoDB integration
+                      </li>
+                      <li>
+                        <span className="highlight">Skills:</span> API development, database management, deployment strategies
+                      </li>
+                      <li>
+                        <span className="highlight">Growth:</span> Learned industry best practices and architecture patterns
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="about-section education-section">
               <div className="section-header">
                 <FaGraduationCap className="section-icon"/>
@@ -33,28 +75,46 @@ const About = () => {
               </div>
               <div className="section-content">
                 <div className="education-item">
-                  <h4>B.Tech in Information Technology</h4>
-                  <p className="institute">Chhotubhai Gopalbhai Patel Institute of Technology</p>
-                  <p className="institute">Uka Tarsadia University, Surat, Gujarat</p>
-                  <div className="education-details">
-                    <p className="period">2022 - Present</p>
+                  <div className="education-header">
+                    <div className="education-title">
+                      <span className="education-icon"><FaUniversity /></span>
+                      <h4>B.Tech in Information Technology</h4>
+                    </div>
+                    <span className="duration">2022 - Present</span>
+                  </div>
+                  <div className="institute-info">
+                    <p className="institute-name">Chhotubhai Gopalbhai Patel Institute of Technology</p>
+                    <p className="institute-location">Uka Tarsadia University, Surat, Gujarat</p>
                     <p className="grade">CGPA: 9.27 (till 5th semester)</p>
                   </div>
-                </div> 
+                </div>
+
                 <div className="education-item">
-                  <h4>12th with PCM (GSHEB)</h4>
-                  <p className="institute">Sanskar Vidhyalay, Kim, Surat</p>
-                  <div className="education-details">
-                    <p className="period">March 2022</p>
+                  <div className="education-header">
+                    <div className="education-title">
+                      <span className="education-icon"><FaGraduationCap /></span>
+                      <h4>12th with PCM (GSHEB)</h4>
+                    </div>
+                    <span className="duration">March 2022</span>
+                  </div>
+                  <div className="institute-info">
+                    <p className="institute-name">Sanskar Vidhyalay</p>
+                    <p className="institute-location">Kim, Surat</p>
                     <p className="grade">Percentage: 73%</p>
                   </div>
                 </div>
 
                 <div className="education-item">
-                  <h4>10th (GSHEB)</h4>
-                  <p className="institute">Shree Kalyan Vidhyalay, Kalyanpura, Kadi</p>
-                  <div className="education-details">
-                    <p className="period">March 2020</p>
+                  <div className="education-header">
+                    <div className="education-title">
+                      <span className="education-icon"><FaGraduationCap /></span>
+                      <h4>10th (GSHEB)</h4>
+                    </div>
+                    <span className="duration">March 2020</span>
+                  </div>
+                  <div className="institute-info">
+                    <p className="institute-name">Shree Kalyan Vidhyalay</p>
+                    <p className="institute-location">Kalyanpura, Kadi</p>
                     <p className="grade">Percentage: 77%</p>
                   </div>
                 </div>
@@ -66,5 +126,4 @@ const About = () => {
     </section>
   );
 };
-
 export default About; 
