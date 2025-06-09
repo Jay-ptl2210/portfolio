@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaCode, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, 
-  FaDatabase, FaGithub, FaJava, FaPython 
+  FaDatabase, FaGithub, FaJava, FaPython, FaKey 
 } from 'react-icons/fa';
-import { SiCplusplus, SiC } from 'react-icons/si';
+import { SiCplusplus, SiC, SiExpress } from 'react-icons/si';
 import { VscCode } from 'react-icons/vsc';
 import './Skills.css';
 
@@ -18,9 +18,9 @@ const Skills = () => {
     },
     {
       title: 'Web Development',
-      skills: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js', 'MongoDB'],
+      skills: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
       icon: <FaCode />,
-      icons: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaReact />, <FaNodeJs />, <FaDatabase />]
+      icons: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaReact />, <FaNodeJs />, <SiExpress />, <FaDatabase />, <FaKey />]
     },
     {
       title: 'Tools',

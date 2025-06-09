@@ -1,16 +1,27 @@
 .about {
-  padding: 3rem 1rem;
+  padding: 3rem 0;
   min-height: calc(100vh - 6rem); /* Subtract navbar and footer height */
   background-color: var(--background-dark);
+}
+
+.about-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
 }
 
 .about-grid {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
   max-width: 900px;
-  margin: 2rem auto 0;
-  padding: 0 1rem;
 }
 
 .about-section {
@@ -58,14 +69,15 @@
   text-align: justify;
 }
 
-.education-section .section-content {
+.education-section .section-content,
+.experience-section .section-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.education-section .education-item,
-.experience-section .experience-item {
+.education-item,
+.experience-item {
   padding: 1.2rem;
   background-color: var(--background-dark);
   border-radius: 8px;
@@ -74,18 +86,18 @@
   width: 100%;
 }
 
-.education-section .education-item:last-child,
-.experience-section .experience-item:last-child {
+.education-item:last-child,
+.experience-item:last-child {
   margin-bottom: 0;
 }
 
-.education-section .education-item:hover,
-.experience-section .experience-item:hover {
+.education-item:hover,
+.experience-item:hover {
   transform: translateX(10px);
 }
 
-.education-section .education-header,
-.experience-section .role-header {
+.education-header,
+.role-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,8 +106,8 @@
   flex-wrap: wrap;
 }
 
-.education-section .education-title,
-.experience-section .role-title {
+.education-title,
+.role-title {
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -103,46 +115,58 @@
   min-width: 200px;
 }
 
-.education-section .education-icon {
+.education-icon,
+.role-icon {
   color: var(--primary-color);
   font-size: 1.2rem;
-  display: flex;
-  align-items: center;
 }
 
-.education-section .education-header h4,
-.experience-section .role-header h4 {
+.education-header h4,
+.role-header h4 {
   color: var(--primary-color);
   font-size: 1.1rem;
   margin: 0;
   font-weight: 600;
 }
 
-.education-section .duration,
-.experience-section .duration {
+.duration {
   white-space: nowrap;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
-.education-section .institute-info,
-.experience-section .company-info {
+.institute-info,
+.company-info {
   margin: 0.5rem 0;
 }
 
-.education-section .institute-name {
+.institute-name,
+.company-name {
   color: var(--text-primary);
   font-size: 1rem;
   margin: 0;
-  font-weight: 500;
 }
 
-.education-section .institute-location {
+.company-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.company-link:hover {
+  color: var(--primary-color);
+}
+
+.institute-location,
+.location {
   color: var(--text-secondary);
   font-size: 0.9rem;
   margin: 0.1rem 0;
   font-style: italic;
 }
 
-.education-section .grade {
+.grade {
   color: var(--primary-color);
   font-size: 0.95rem;
   margin: 0.3rem 0 0;
@@ -190,18 +214,6 @@
   color: var(--text-primary);
   font-size: 1.8rem;
   margin-bottom: 2rem;
-}
-
-.experience-item {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.experience-item:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
 }
 
 .experience-item h4 {
@@ -531,20 +543,6 @@
   margin-bottom: 0.5rem;
 }
 
-.experience-section .company-name {
-  color: var(--text-primary);
-  font-size: 1rem;
-  margin: 0;
-  font-weight: 500;
-}
-
-.experience-section .location {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  margin: 0.1rem 0;
-  font-style: italic;
-}
-
 .experience-section .experience-details h5 {
   color: var(--text-primary);
   font-size: 1rem;
@@ -597,17 +595,17 @@
 
 @media screen and (max-width: 768px) {
   .about {
-    padding: 2rem 0.5rem;
+    padding: 2rem 0;
   }
 
   .about-grid {
-    margin-top: 1rem;
-    padding: 0 0.5rem;
+    margin-top: 1.5rem;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .about-section {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
   }
 
   .section-header {
@@ -627,56 +625,55 @@
     font-size: 1rem;
   }
 
-  .education-section .education-item,
-  .experience-section .experience-item {
+  .education-item,
+  .experience-item {
     padding: 1rem;
   }
 
-  .education-section .education-header,
-  .experience-section .role-header {
+  .education-header,
+  .role-header {
     gap: 0.5rem;
   }
 
-  .education-section .education-title,
-  .experience-section .role-title {
+  .education-title,
+  .role-title {
     gap: 0.5rem;
     min-width: 160px;
   }
 
-  .education-section .education-icon,
-  .experience-section .role-icon {
+  .education-icon,
+  .role-icon {
     font-size: 1.1rem;
   }
 
-  .education-section .education-header h4,
-  .experience-section .role-header h4 {
+  .education-header h4,
+  .role-header h4 {
     font-size: 1rem;
   }
 
-  .education-section .institute-name,
-  .experience-section .company-name {
+  .institute-name,
+  .company-name {
     font-size: 0.95rem;
   }
 
-  .education-section .institute-location,
-  .experience-section .location,
-  .education-section .duration,
-  .experience-section .duration {
+  .institute-location,
+  .location,
+  .duration {
     font-size: 0.85rem;
   }
 
-  .education-section .grade {
+  .grade {
     font-size: 0.9rem;
     margin-top: 0.2rem;
   }
 
-  .experience-section .experience-details li {
+  .experience-details li {
     font-size: 0.9rem;
     padding-left: 1rem;
     margin-bottom: 0.4rem;
   }
 
-  .experience-section .experience-details li::before {
+  .experience-details li::before {
     font-size: 0.9rem;
   }
 }
@@ -696,7 +693,7 @@
     padding: 1.2rem 0.8rem;
   }
 
-  .education-section .education-header,
+  .education-header,
   .experience-section .role-header {
     flex-direction: column;
     align-items: flex-start;

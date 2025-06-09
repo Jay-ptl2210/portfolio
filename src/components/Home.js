@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Home.css';
 
@@ -28,20 +27,22 @@ const Home = () => {
             <h1 className="hero-title">
               Hi, I'm <span className="highlight">Jay Patel</span>
             </h1>
-            <h2 className="hero-subtitle">
-              <div className="text-slider">
-                <div>MERN Stack/Web Dev</div>
-                <div>OOP in Java/Python</div>
-                <div>AI/ML Enthusiast</div>
-              </div>
-            </h2>
+            <div className="hero-subtitle-wrapper">
+              <h2 className="hero-subtitle">
+                <div className="text-slider">
+                  <div className="slider-item">MERN Stack/Web Dev</div>
+                  <div className="slider-item">OOP in Java/Python</div>
+                  <div className="slider-item">AI/ML Enthusiast</div>
+                </div>
+              </h2>
+            </div>
             <div className="hero-buttons">
               <a href="/Resume/Jay_Patel_Resume.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Download Resume
               </a>
-              <Link to="/contact" className="btn btn-secondary">
+              <a href="#contact" className="btn btn-secondary">
                 Contact Me
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,12 +13,20 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      closeMenu();
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link to="/" className="nav-logo">
+        <a href="#home" className="nav-logo" onClick={() => scrollToSection('home')}>
           Jay Patel
-        </Link>
+        </a>
 
         <div className="menu-icon" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
@@ -28,58 +34,58 @@ const Navbar = () => {
 
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <Link 
-              to="/" 
-              className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
-              onClick={closeMenu}
+            <a 
+              href="#home" 
+              className="nav-link"
+              onClick={() => scrollToSection('home')}
             >
               Home
-            </Link>
+            </a>
           </li>
           <li className="nav-item">
-            <Link 
-              to="/about" 
-              className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}
-              onClick={closeMenu}
+            <a 
+              href="#about" 
+              className="nav-link"
+              onClick={() => scrollToSection('about')}
             >
               About
-            </Link>
+            </a>
           </li>
           <li className="nav-item">
-            <Link 
-              to="/skills" 
-              className={`nav-link ${location.pathname === '/skills' ? 'active' : ''}`}
-              onClick={closeMenu}
+            <a 
+              href="#skills" 
+              className="nav-link"
+              onClick={() => scrollToSection('skills')}
             >
               Skills
-            </Link>
+            </a>
           </li>
           <li className="nav-item">
-            <Link 
-              to="/projects" 
-              className={`nav-link ${location.pathname === '/projects' ? 'active' : ''}`}
-              onClick={closeMenu}
+            <a 
+              href="#projects" 
+              className="nav-link"
+              onClick={() => scrollToSection('projects')}
             >
               Projects
-            </Link>
+            </a>
           </li>
           <li className="nav-item">
-            <Link 
-              to="/certificates" 
-              className={`nav-link ${location.pathname === '/certificates' ? 'active' : ''}`}
-              onClick={closeMenu}
+            <a 
+              href="#certificates" 
+              className="nav-link"
+              onClick={() => scrollToSection('certificates')}
             >
               Certificates
-            </Link>
+            </a>
           </li>
           <li className="nav-item">
-            <Link 
-              to="/contact" 
-              className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
-              onClick={closeMenu}
+            <a 
+              href="#contact" 
+              className="nav-link"
+              onClick={() => scrollToSection('contact')}
             >
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

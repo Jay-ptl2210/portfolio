@@ -6,6 +6,14 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: 'Task Manager Web App',
+      description: 'A full-stack task management application built during my internship. Implements user authentication, task CRUD operations, and server-side rendering with EJS.',
+      image: '/Project/task-manager.png',
+      technologies: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'JWT'],
+      github: 'https://github.com/Jay-ptl2210/taskManager',
+      live: 'https://taskmanagerbyjayptl.onrender.com/'
+    },
+    {
       title: 'CalcExperts - Interactive Math App',
       description: 'A React.js application featuring GCD, factorial, and modulo functions. Includes responsive login and about pages, demonstrating frontend development skills using React hooks and state management.',
       image: '/Project/project-1.png',
