@@ -7,9 +7,9 @@ const Projects = () => {
   const projects = [
     {
       title: 'Task Manager Web App',
-      description: 'A full-stack task management application built during my internship. Implements user authentication, task CRUD operations, and server-side rendering with EJS.',
+      description: 'A full-stack task management application built during my internship, featuring secure user authentication, complete task CRUD operations, and server-side rendering using EJS templating. Also includes AI-powered task categorization via Hugging Face for smart task tagging.',
       image: '/Project/task-manager.png',
-      technologies: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'JWT'],
+      technologies: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'JWT','Hugging Face API'],
       github: 'https://github.com/Jay-ptl2210/taskManager',
       live: 'https://taskmanagerbyjayptl.onrender.com/'
     },
