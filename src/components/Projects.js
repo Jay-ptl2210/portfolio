@@ -6,6 +6,14 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: '🤖 Virtual AI Assistant',
+      description: 'A voice-enabled Virtual AI Assistant built during my Node.js Internship at Webito Infotech. It mimics a JARVIS-like experience with real-time speech recognition, AI-powered replies, and customizable branding. Built using the MERN stack and powered by the Google Gemini API, it supports voice input/output for natural interaction.',
+      image: '/Project/AI.png',
+      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Google Gemini API', 'Web Speech API'],
+      github: 'https://github.com/Jay-ptl2210/virtualAssistant', // Add GitHub link if available
+      live: 'https://virtualassistantbyjayptl.onrender.com/'    // Add live link if available
+    },
+    {
       title: 'Task Manager Web App',
       description: 'A full-stack task management application built during my internship, featuring secure user authentication, complete task CRUD operations, and server-side rendering using EJS templating. Also includes AI-powered task categorization via Hugging Face for smart task tagging.',
       image: '/Project/task-manager.png',

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
         </div>
 
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          <li className="nav-item">
+          <motion.li className="nav-item" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}>
             <a 
               href="#home" 
               className="nav-link"
@@ -41,8 +42,8 @@ const Navbar = () => {
             >
               Home
             </a>
-          </li>
-          <li className="nav-item">
+          </motion.li>
+          <motion.li className="nav-item" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
             <a 
               href="#about" 
               className="nav-link"
@@ -50,8 +51,8 @@ const Navbar = () => {
             >
               About
             </a>
-          </li>
-          <li className="nav-item">
+          </motion.li>
+          <motion.li className="nav-item" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }}>
             <a 
               href="#skills" 
               className="nav-link"
@@ -59,8 +60,8 @@ const Navbar = () => {
             >
               Skills
             </a>
-          </li>
-          <li className="nav-item">
+          </motion.li>
+          <motion.li className="nav-item" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>
             <a 
               href="#projects" 
               className="nav-link"
@@ -68,8 +69,8 @@ const Navbar = () => {
             >
               Projects
             </a>
-          </li>
-          <li className="nav-item">
+          </motion.li>
+          <motion.li className="nav-item" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.5 }}>
             <a 
               href="#certificates" 
               className="nav-link"
@@ -77,8 +78,8 @@ const Navbar = () => {
             >
               Certificates
             </a>
-          </li>
-          <li className="nav-item">
+          </motion.li>
+          <motion.li className="nav-item" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }}>
             <a 
               href="#contact" 
               className="nav-link"
@@ -86,7 +87,7 @@ const Navbar = () => {
             >
               Contact
             </a>
-          </li>
+          </motion.li>
         </ul>
       </div>
     </nav>

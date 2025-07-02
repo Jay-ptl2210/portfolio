@@ -90,7 +90,7 @@ const About = () => {
                     <div className="institute-info">
                       <p className="institute-name">Chhotubhai Gopalbhai Patel Institute of Technology</p>
                       <p className="institute-location">Uka Tarsadia University, Surat, Gujarat</p>
-                      <p className="grade">CGPA: 9.27 (till 5th semester)</p>
+                      <p className="grade">CGPA: 9.23 (till 6th semester)</p>
                     </div>
                   </div>
 
