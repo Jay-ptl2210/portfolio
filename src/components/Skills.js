@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaCode, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, 
-  FaDatabase, FaGithub, FaJava, FaPython, FaKey 
+  FaDatabase, FaGithub, FaJava, FaPython, FaKey, FaDocker 
 } from 'react-icons/fa';
 import { SiCplusplus, SiC, SiExpress } from 'react-icons/si';
 import { VscCode } from 'react-icons/vsc';
@@ -55,9 +55,9 @@ const Skills = () => {
     },
     {
       title: 'Tools',
-      skills: ['Microsoft Visual Studio Code', 'Git & Github', 'Render'],
+      skills: ['Microsoft Visual Studio Code', 'Git & Github', 'Render', 'Docker'],
       icon: <FaCode />,
-      icons: [<VscCode />, <FaGithub />, <RenderIcon />]
+      icons: [<VscCode />, <FaGithub />, <RenderIcon />, <FaDocker />]
     }
   ];
 

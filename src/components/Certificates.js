@@ -8,6 +8,26 @@ const Certificates = () => {
 
   const certificates = [
     {
+      id: 7,
+      title: 'Node.js Development Internship',
+      issuer: 'Webito Infotech Pvt. Ltd.',
+      date: 'July 8, 2025',
+      image: '/Certificates/Webito_Certificate.png',
+      description: 'Completed internship in Node.js Development at Webito Infotech Pvt. Ltd. (June 2, 2025 – July 7, 2025). Worked on backend RESTful APIs, authentication, AI integration, cloud uploads, Docker, and deployment. Recognized for dedication, teamwork, and results.',
+      skills: [
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+        'RESTful APIs',
+        'JWT Authentication',
+        'AI Integration',
+        'Cloudinary',
+        'Docker',
+        'Teamwork',
+        'Deployment'
+      ]
+    },
+    {
       id: 1,
       title: 'Gen AI Academy',
       issuer: 'Google Cloud & Hack2Skill',

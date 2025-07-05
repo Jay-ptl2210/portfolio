@@ -743,3 +743,41 @@
     padding: 1.5rem;
   }
 }
+
+/* Experience Links Styles */
+.experience-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.experience-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.experience-link:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+.link-separator {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .experience-links {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .link-separator {
+    display: none;
+  }
+}

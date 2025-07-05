@@ -43,12 +43,12 @@ const About = () => {
                         <span className="role-icon"><FaNodeJs /></span>
                         <h4>Node.js Development Intern</h4>
                       </div>
-                      <span className="duration">June 2025 - Present</span>
+                      <span className="duration">June - July 2025</span>
                     </div>
                     <div className="company-info">
                       <p className="company-name">
                         <a href="https://webitoinfotech.com/" target="_blank" rel="noopener noreferrer" className="company-link">
-                          Webito Infotech
+                        Webito Infotech Pvt. Ltd.
                         </a>
                       </p>
                       <p className="location">Surat, India (Onsite)</p>
@@ -56,18 +56,30 @@ const About = () => {
                     <div className="experience-details">
                       <ul>
                         <li>
-                          <span className="highlight">Backend:</span> Built scalable server-side logic using Node.js and Express.js
+                          <span className="highlight">Backend:</span> Built and deployed secure RESTful APIs using Node.js, Express.js, and MongoDB, with full JWT-based authentication
                         </li>
                         <li>
-                          <span className="highlight">Projects:</span> Worked on real-time applications with MongoDB integration
+                          <span className="highlight">AI Integration:</span> Developed real-time features like task auto-categorization using Hugging Face Zero-Shot ML models and Gemini AI for smart assistant responses
                         </li>
                         <li>
-                          <span className="highlight">Skills:</span> API development, database management, deployment strategies
+                          <span className="highlight">Cloud & Testing:</span> Managed cloud-based media uploads with Cloudinary + Multer, and performed testing using Postman
                         </li>
                         <li>
-                          <span className="highlight">Growth:</span> Learned industry best practices and architecture patterns
+                          <span className="highlight">DevOps:</span> Dockerized backend services and used Docker Compose to manage app and database containers
+                        </li>
+                        <li>
+                          <span className="highlight">Deployment:</span> Collaborated in a Git-based team environment, and deployed full-stack apps on Render with .env management and error handling
                         </li>
                       </ul>
+                      <div className="experience-links">
+                        <a href="/Resume/Webito_Offer Latter.pdf" className="experience-link" target="_blank" rel="noopener noreferrer">
+                          View Offer Letter
+                        </a>
+                        <span className="link-separator">|</span>
+                        <a href="/Resume/Webito_Certificate.pdf" className="experience-link" target="_blank" rel="noopener noreferrer">
+                          View Certificate
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
