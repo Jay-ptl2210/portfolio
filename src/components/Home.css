@@ -90,7 +90,7 @@
 .hero-subtitle {
   font-size: 2rem;
   color: var(--text-secondary);
-  height: 2.5rem;
+  height: 3rem; /* enough height for tallest line */
   overflow: hidden;
   position: relative;
   margin: 0;
@@ -99,11 +99,11 @@
 .text-slider {
   display: inline-flex;
   flex-direction: column;
-  animation: slide 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: slide 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .slider-item {
-  height: 2.5rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   background: linear-gradient(45deg, #00A8E8, #4CAF50);
@@ -111,21 +111,22 @@
   background-clip: text;
   color: transparent;
   font-weight: 600;
+  font-size: 2rem;
   text-shadow: 0 0 10px rgba(0, 168, 232, 0.3);
   white-space: nowrap;
 }
 
 @keyframes slide {
-  0%, 26.66% {
+  0%, 20% {
     transform: translateY(0);
   }
-  33.33%, 59.99% {
-    transform: translateY(-2.5rem);
+  25%, 45% {
+    transform: translateY(-3rem);
   }
-  66.66%, 93.32% {
-    transform: translateY(-5rem);
+  50%, 70% {
+    transform: translateY(-6rem);
   }
-  100% {
+  75%, 100% {
     transform: translateY(0);
   }
 }
@@ -187,6 +188,7 @@
   box-shadow: 0 5px 15px rgba(0, 168, 232, 0.2);
 }
 
+/* Responsive */
 @media screen and (max-width: 768px) {
   .home {
     padding: 2rem 0;
@@ -225,10 +227,28 @@
 
   .hero-subtitle {
     font-size: 1.5rem;
+    height: 2.5rem;
   }
 
   .slider-item {
+    font-size: 1.5rem;
+    height: 2.5rem;
     justify-content: center;
+  }
+
+  @keyframes slide {
+    0%, 20% {
+      transform: translateY(0);
+    }
+    25%, 45% {
+      transform: translateY(-2.5rem);
+    }
+    50%, 70% {
+      transform: translateY(-5rem);
+    }
+    75%, 100% {
+      transform: translateY(0);
+    }
   }
 
   .hero-buttons {
@@ -245,19 +265,4 @@
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
   }
-
-  @keyframes slide {
-    0%, 26.66% {
-      transform: translateY(0);
-    }
-    33.33%, 59.99% {
-      transform: translateY(-2.5rem);
-    }
-    66.66%, 93.32% {
-      transform: translateY(-5rem);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-} 
+}

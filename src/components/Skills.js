@@ -4,7 +4,7 @@ import {
   FaCode, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, 
   FaDatabase, FaGithub, FaJava, FaPython, FaKey, FaDocker 
 } from 'react-icons/fa';
-import { SiCplusplus, SiC, SiExpress } from 'react-icons/si';
+import { SiCplusplus, SiC, SiExpress, SiScikitlearn } from 'react-icons/si';
 import { VscCode } from 'react-icons/vsc';
 import './Skills.css';
 
@@ -54,6 +54,36 @@ const Skills = () => {
       icons: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaReact />, <FaNodeJs />, <SiExpress />, <FaDatabase />, <FaKey />, <GeminiIcon />, <SpeechApiIcon />]
     },
     {
+      title: 'AI/ML Tools (Beginner)',
+      skills: [
+        'Scikit-learn', 
+        'Pandas', 
+        'NumPy', 
+        'Linear & Logistic Regression', 
+        'K-Nearest Neighbours', 
+        'Decision Trees', 
+        'Random Forest', 
+        'Support Vector Machine (SVM)', 
+        'K-Means Clustering', 
+        'Overfitting & Regularization', 
+        'Model Evaluation (Confusion Matrix, F1-score, ROC-AUC)'
+      ],
+      icon: <FaCode />,
+      icons: [
+        <SiScikitlearn />, 
+        <FaDatabase />, 
+        <FaPython />, 
+        <FaCode />, 
+        <FaCode />, 
+        <FaCode />, 
+        <FaCode />, 
+        <FaCode />, 
+        <FaCode />, 
+        <FaCode />, 
+        <FaCode />
+      ]
+    },
+    {
       title: 'Tools',
       skills: ['Microsoft Visual Studio Code', 'Git & Github', 'Render', 'Docker'],
       icon: <FaCode />,
@@ -100,4 +130,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;

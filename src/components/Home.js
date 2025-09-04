@@ -37,8 +37,8 @@ const Home = () => {
               </h2>
             </div>
             <div className="hero-buttons">
-              <a href="/Resume/Jay Patel_CV.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Download CV
+              <a href="/Resume/Jay Patel_Resume.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Download Resume
               </a>
               <a href="#contact" className="btn btn-secondary">
                 Contact Me

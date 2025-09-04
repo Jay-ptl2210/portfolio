@@ -10,8 +10,8 @@ const Projects = () => {
       description: 'A voice-enabled Virtual AI Assistant built during my Node.js Internship at Webito Infotech. It mimics a JARVIS-like experience with real-time speech recognition, AI-powered replies, and customizable branding. Built using the MERN stack and powered by the Google Gemini API, it supports voice input/output for natural interaction.',
       image: '/Project/AI.png',
       technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Google Gemini API', 'Web Speech API'],
-      github: 'https://github.com/Jay-ptl2210/virtualAssistant', // Add GitHub link if available
-      live: 'https://virtualassistantbyjayptl.onrender.com/'    // Add live link if available
+      github: 'https://github.com/Jay-ptl2210/virtualAssistant',
+      live: 'https://virtualassistantbyjayptl.onrender.com/'
     },
     {
       title: 'Task Manager Web App',
@@ -20,6 +20,13 @@ const Projects = () => {
       technologies: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'JWT','Hugging Face API'],
       github: 'https://github.com/Jay-ptl2210/taskManager',
       live: 'https://taskmanagerbyjayptl.onrender.com/'
+    },
+    {
+      title: 'Loan Default Prediction System',
+      description: 'A machine learning project to predict loan defaults using Random Forest on financial data. Includes preprocessing, model evaluation with Confusion Matrix, F1-score, ROC-AUC, and result visualization with Matplotlib.',
+      image: '/Project/Loan Default Pred.png',
+      technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Random Forest', 'Matplotlib'],
+      live: 'https://drive.google.com/file/d/1FZ99bKdtWZ4ipJduJnGwN1a52h-MrfIa/view?usp=sharing',
     },
     {
       title: 'CalcExperts - Interactive Math App',
@@ -36,7 +43,7 @@ const Projects = () => {
       technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
       github: 'https://github.com/Jay-ptl2210/RajanPortfolio',
       live: 'https://rajanptlportfolio.netlify.app/'
-    }
+    },
   ];
 
   return (
@@ -60,12 +67,16 @@ const Projects = () => {
                 <div className="project-image">
                   <img src={project.image} alt={project.title} />
                   <div className="project-links">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <FaGithub />
-                    </a>
-                    <a href={project.live} target="_blank" rel="noopener noreferrer">
-                      <FaExternalLinkAlt />
-                    </a>
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <FaGithub />
+                      </a>
+                    )}
+                    {project.live && (
+                      <a href={project.live} target="_blank" rel="noopener noreferrer">
+                        <FaExternalLinkAlt />
+                      </a>
+                    )}
                   </div>
                 </div>
                 <div className="project-info">
@@ -88,4 +99,4 @@ const Projects = () => {
   );
 };
 
-export default Projects; 
+export default Projects;
