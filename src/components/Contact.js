@@ -27,8 +27,8 @@ const Contact = () => {
             <FaMapMarkerAlt className="icon" />
             <div className="info-content">
               <h3>Location</h3>
-              <a href="https://www.google.com/maps/place/Surat,+Gujarat" target="_blank" rel="noopener noreferrer">
-                Surat, Gujarat
+              <a href="https://www.google.com/maps/place/Ahmedabad,+Gujarat" target="_blank" rel="noopener noreferrer">
+                Ahmedabad, Gujarat, India
               </a>
             </div>
           </div>
