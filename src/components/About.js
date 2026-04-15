@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGraduationCap, FaUser, FaBriefcase, FaNodeJs, FaUniversity, FaLaptopCode } from 'react-icons/fa';
+import { FaGraduationCap, FaUser, FaBriefcase, FaNodeJs, FaUniversity } from 'react-icons/fa';
 import './About.css';
 import { motion } from 'framer-motion';
 
@@ -37,53 +37,18 @@ const About = () => {
                   <h3>Experience</h3>
                 </div>
                 <div className="section-content">
-                  {/* Yantra Design Pvt. Ltd. - Current Internship */}
-                  <div className="experience-item">
-                    <div className="role-header">
-                      <div className="role-title">
-                        <span className="role-icon"><FaLaptopCode /></span>
-                        <h4>IT Intern</h4>
-                      </div>
-                      <span className="duration">December 2025 – Present</span>
-                    </div>
-                    <div className="company-info">
-                      <p className="company-name">Yantra Design Pvt. Ltd.</p>
-                      <p className="location">Surat, Gujarat (Onsite)</p>
-                    </div>
-                    <div className="experience-details">
-                      <ul>
-                        <li>
-                          <span className="highlight">ERP Deployment &amp; Customization:</span> Installed, configured, and deployed Odoo ERP with PostgreSQL; customized CRM, Sales, Purchase, Inventory, Manufacturing (MRP), and HRMS modules to align with real-world industrial business workflows.
-                        </li>
-                        <li>
-                          <span className="highlight">Custom Module Development:</span> Engineered custom Odoo modules using Python and XML — including dynamic quotation systems, machine configuration modules, automated pricing logic, and professional QWeb PDF report templates.
-                        </li>
-                        <li>
-                          <span className="highlight">End-to-End Integration &amp; Automation:</span> Integrated the complete CRM → Sales → Manufacturing lifecycle and automated data synchronization, reporting, and pricing workflows using Odoo scheduled cron jobs and API-based field mapping.
-                        </li>
-                        <li>
-                          <span className="highlight">Debugging, DevOps &amp; HRMS:</span> Resolved UI, access control, and database migration issues through structured log analysis; managed Git version control; deployed ERP on VPS; and enhanced HRMS with analytics, Leave, Regularization, and role-based access control.
-                        </li>
-                        <li>
-                          <span className="highlight">Mobile App Deployment:</span> Researched Android &amp; iOS publishing workflows, generated Android App Bundle (AAB) builds, and delivered live feature updates including task management, automated scheduling, and system performance optimization.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Webito Infotech Pvt. Ltd. */}
                   <div className="experience-item">
                     <div className="role-header">
                       <div className="role-title">
                         <span className="role-icon"><FaNodeJs /></span>
                         <h4>Node.js Development Intern</h4>
                       </div>
-                      <span className="duration">June – July 2025</span>
+                      <span className="duration">June - July 2025</span>
                     </div>
                     <div className="company-info">
                       <p className="company-name">
                         <a href="https://webitoinfotech.com/" target="_blank" rel="noopener noreferrer" className="company-link">
-                          Webito Infotech Pvt. Ltd.
+                        Webito Infotech Pvt. Ltd.
                         </a>
                       </p>
                       <p className="location">Surat, India (Onsite)</p>
@@ -97,7 +62,7 @@ const About = () => {
                           <span className="highlight">AI Integration:</span> Developed real-time features like task auto-categorization using Hugging Face Zero-Shot ML models and Gemini AI for smart assistant responses
                         </li>
                         <li>
-                          <span className="highlight">Cloud &amp; Testing:</span> Managed cloud-based media uploads with Cloudinary + Multer, and performed testing using Postman
+                          <span className="highlight">Cloud & Testing:</span> Managed cloud-based media uploads with Cloudinary + Multer, and performed testing using Postman
                         </li>
                         <li>
                           <span className="highlight">DevOps:</span> Dockerized backend services and used Docker Compose to manage app and database containers
