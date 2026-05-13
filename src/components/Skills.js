@@ -2,9 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaCode, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, 
-  FaDatabase, FaGithub, FaJava, FaPython, FaKey, FaDocker 
+  FaDatabase, FaGithub, FaJava, FaPython, FaKey, FaDocker,
+  FaLayerGroup, FaClock, FaLink, FaBriefcase
 } from 'react-icons/fa';
-import { SiCplusplus, SiC, SiExpress, SiScikitlearn } from 'react-icons/si';
+import { SiCplusplus, SiC, SiExpress, SiScikitlearn, SiOdoo, SiPostgresql } from 'react-icons/si';
 import { VscCode } from 'react-icons/vsc';
 import './Skills.css';
 
@@ -52,6 +53,30 @@ const Skills = () => {
       skills: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Google Gemini API', 'Web Speech API'],
       icon: <FaCode />,
       icons: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaReact />, <FaNodeJs />, <SiExpress />, <FaDatabase />, <FaKey />, <GeminiIcon />, <SpeechApiIcon />]
+    },
+    {
+      title: 'ERP & Enterprise',
+      skills: [
+        'Odoo ERP & module customization',
+        'Custom ERP (Sales, Purchase, Mfg, CRM)',
+        'Python & Odoo ORM',
+        'XML views & QWeb reports',
+        'PostgreSQL',
+        'REST APIs & CRM integration',
+        'Cron jobs & scheduled sync',
+        'RBAC, workflows & HRMS'
+      ],
+      icon: <FaLayerGroup />,
+      icons: [
+        <SiOdoo />,
+        <FaBriefcase />,
+        <FaPython />,
+        <FaCode />,
+        <SiPostgresql />,
+        <FaLink />,
+        <FaClock />,
+        <FaKey />
+      ]
     },
     {
       title: 'AI/ML Tools (Beginner)',

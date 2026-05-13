@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
+import { BsTelephoneFill } from 'react-icons/bs';
 import './Contact.css';
 
 const Contact = () => {
@@ -17,7 +18,7 @@ const Contact = () => {
           </div>
 
           <div className="info-item">
-            <FaPhone className="icon" />
+            <BsTelephoneFill className="icon" aria-hidden />
             <div className="info-content">
               <h3>Phone</h3>
               <a href="tel:+917041151519">+91 7041151519</a>

@@ -6,6 +6,15 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: 'Enterprise Inventory Management ERP',
+      description:
+        'Inventory ERP (MERN, Tailwind) in production at Welltouch Hygiene Pvt. Ltd.: real-time stock, production-to-delivery workflows, logistics, automated challan PDFs, master data, RBAC, and dashboards. v1.1.0 live; v2.0 in development.',
+      image: '/Project/welltouch-inventory-erp.png',
+      technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS'],
+      confidentialityNote:
+        'As per company policy, a public live link or repository is not shared for this project. I can walk through the system live in person or on a video call if you would like a demo.',
+    },
+    {
       title: '🤖 Virtual AI Assistant',
       description: 'A voice-enabled Virtual AI Assistant built during my Node.js Internship at Webito Infotech. It mimics a JARVIS-like experience with real-time speech recognition, AI-powered replies, and customizable branding. Built using the MERN stack and powered by the Google Gemini API, it supports voice input/output for natural interaction.',
       image: '/Project/AI.png',
@@ -66,6 +75,7 @@ const Projects = () => {
               >
                 <div className="project-image">
                   <img src={project.image} alt={project.title} />
+                  {(project.github || project.live) && (
                   <div className="project-links">
                     {project.github && (
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -78,6 +88,7 @@ const Projects = () => {
                       </a>
                     )}
                   </div>
+                  )}
                 </div>
                 <div className="project-info">
                   <h3>{project.title}</h3>
@@ -89,6 +100,9 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
+                  {project.confidentialityNote && (
+                    <p className="project-confidentiality-note">{project.confidentialityNote}</p>
+                  )}
                 </div>
               </motion.div>
             ))}

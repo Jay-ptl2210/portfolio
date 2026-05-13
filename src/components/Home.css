@@ -23,24 +23,52 @@
   max-width: 400px;
 }
 
+/* Ring = padding so the photo never sits under the border (cleaner clip) */
 .profile-image {
-  width: 350px;
-  height: 350px;
+  position: relative;
+  width: 320px;
+  height: 320px;
+  flex-shrink: 0;
+  padding: 4px;
   border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid var(--primary-color);
-  box-shadow: 0 0 20px rgba(0, 168, 232, 0.3);
+  background: var(--primary-color);
+  box-shadow: 0 0 24px rgba(0, 168, 232, 0.28);
 }
 
-.profile-image img {
+.profile-image-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  /* Hard circular clip (fixes subpixel “leaks” with transforms) */
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  background: #1a1d21;
+}
+
+.profile-image-inner img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  object-position: center 18%;
+  transform: scale(1);
+  transform-origin: center 25%;
+  transition: transform 0.4s ease;
 }
 
-.profile-image:hover img {
-  transform: scale(1.1);
+.profile-image:hover .profile-image-inner img {
+  transform: scale(1.04);
+}
+
+/* Very light edge soften only — keeps colors natural */
+.profile-image::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: inset 0 0 36px rgba(0, 0, 0, 0.18);
 }
 
 .hero-text {
@@ -106,14 +134,17 @@
   height: 3rem;
   display: flex;
   align-items: center;
-  background: linear-gradient(45deg, #00A8E8, #4CAF50);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   font-weight: 600;
   font-size: 2rem;
-  text-shadow: 0 0 10px rgba(0, 168, 232, 0.3);
   white-space: nowrap;
+}
+
+.slider-accent {
+  color: var(--primary-color);
+}
+
+.slider-rest {
+  color: #9db0c4;
 }
 
 @keyframes slide {
@@ -210,6 +241,11 @@
   .profile-image {
     width: 200px;
     height: 200px;
+    padding: 3px;
+  }
+
+  .profile-image::after {
+    inset: 3px;
   }
 
   .hero-text {

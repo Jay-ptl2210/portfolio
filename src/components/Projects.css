@@ -92,6 +92,17 @@
   gap: 0.8rem;
 }
 
+.project-confidentiality-note {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #8a9aaa;
+  font-style: italic;
+}
+
 .tech-tag {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--primary-color);

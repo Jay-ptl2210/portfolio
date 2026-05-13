@@ -14,7 +14,9 @@ const Home = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="profile-image">
-              <img src="/images/profile-pic.png" alt="Jay Patel" />
+              <div className="profile-image-inner">
+                <img src="/images/profile-pic.png" alt="Jay Patel" />
+              </div>
             </div>
           </motion.div>
 
@@ -30,9 +32,18 @@ const Home = () => {
             <div className="hero-subtitle-wrapper">
               <h2 className="hero-subtitle">
                 <div className="text-slider">
-                  <div className="slider-item">MERN Stack/Web Dev</div>
-                  <div className="slider-item">OOP in Java/Python</div>
-                  <div className="slider-item">AI/ML Enthusiast</div>
+                  <div className="slider-item">
+                    <span className="slider-accent">MERN</span>
+                    <span className="slider-rest"> Stack & Web Apps</span>
+                  </div>
+                  <div className="slider-item">
+                    <span className="slider-accent">Odoo</span>
+                    <span className="slider-rest"> / ERP & Python</span>
+                  </div>
+                  <div className="slider-item">
+                    <span className="slider-accent">REST APIs</span>
+                    <span className="slider-rest"> & PostgreSQL</span>
+                  </div>
                 </div>
               </h2>
             </div>
